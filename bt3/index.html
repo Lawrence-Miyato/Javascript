@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        thead,
+        tbody,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <h2>Post</h2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>VIEWS</th>
+                    <th>Authors</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="bodyPosts">
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <div>
+            <p>ID: </p>
+            <input type="text" id="id">
+        </div>
+        <div>
+            <p>TITLE: </p>
+            <input type="text" id="title">
+        </div>
+        <div>
+            <p>VIEWS: </p>
+            <input type="text" id="views">
+        </div>
+        <div>
+            <p>Authors: </p>
+            <label for="author">Select Author:</label>
+            <select id="authorDropdown">
+                <option value="">-- Select Author --</option>
+            </select>
+
+            <p id="result"></p>
+
+
+        </div>
+        <button type="button" onclick="SavePost()">Save</button>
+    </div>
+    <h2>Authors</h2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Post Count</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="bodyAuthors">
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <div>
+            <p>ID: </p>
+            <input type="text" id="id">
+        </div>
+        <div>
+            <p>Name: </p>
+            <input type="text" id="name">
+        </div>
+    </div>
+    <button type="button" onclick="SaveAuthor()">Save</button>
+</body>
+
+</html>
